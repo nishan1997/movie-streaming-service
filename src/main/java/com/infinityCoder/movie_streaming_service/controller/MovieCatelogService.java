@@ -16,7 +16,7 @@ public class MovieCatelogService {
     public String getMoviePath(Long movieInfoId){
 //        here we are connecting to the another service
 //        RestTemplate enable to give the http request to the another service
-        var response= restTemplate.getForEntity(CATELOG_SERVICE+"/movie-info/find-movie-by-id/{movieInfoId}",String.class,movieInfoId);
+        var response= restTemplate.getForEntity(CATELOG_SERVICE+"/movie-info/find-path-by-id/{movieInfoId}",String.class,movieInfoId);
         return  response.getBody();
     }
 }
