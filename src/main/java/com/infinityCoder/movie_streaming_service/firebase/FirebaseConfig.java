@@ -18,7 +18,7 @@ public class FirebaseConfig {
 
             FirebaseOptions options=FirebaseOptions.builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                    .setStorageBucket("streamingapp-56ff3.appspot.com")
+                    .setStorageBucket("video-stream-app-6a561.appspot.com")
                     .build();
             FirebaseApp.initializeApp();
         }
