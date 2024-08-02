@@ -19,7 +19,7 @@ public class FirebaseStorageService {
         ClassPathResource resource = new ClassPathResource("streamingapp-56ff3-firebase-adminsdk-aebof-aed9928ecf.json");
         GoogleCredentials credentials = GoogleCredentials.fromStream(resource.getInputStream());
         this.storage = StorageOptions.newBuilder().setCredentials(credentials).build().getService();
-        this.bucketName = "streamingapp-56ff3.appspot.com"; // replace with your bucket name
+        this.bucketName = "stream-app-a0772.appspot.com"; // replace with your bucket name
 
     }
 
